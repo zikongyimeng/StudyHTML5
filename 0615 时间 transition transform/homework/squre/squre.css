@@ -1,0 +1,86 @@
+
+
+
+
+#upSqure{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform:translateZ(-100px);/*在Z轴移动100px*/
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+#botSqure{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 0px;
+    transform:  rotateX(90deg) translateZ(100px);/*绕X轴旋转90度，在Z轴移动100px*/
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+#leftSqure{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transform: rotateX(90deg) translateZ(-100px);
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+#rightSqure{
+    width: 200px;
+    height:200px;
+    background-color: magenta;
+    transform:  rotateY(90deg) translateZ(-100px);
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+#frontSqure{
+    width: 200px;
+    height:200px;
+    background-color: darkgreen;
+    transform:translateZ(100px);
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+#behindSqure{
+    width: 200px;
+    height:200px;
+    background-color: saddlebrown;
+    transform:  rotateY(90deg) translateZ(100px);
+    position: absolute;
+    font-size:100px ;
+    text-align: center;
+    line-height: 200px;
+}
+
+  @keyframes squrTo{
+        from{
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to{
+            transform: rotateX(1800deg) rotateY(1800deg) rotateZ(1800deg);
+        }
+  }
+
+
+#bigSqure {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 200px;
+    transform-style: preserve-3d; /*3D透视*/
+    position: absolute;
+    animation-name: squrTo;
+    animation-duration: 20s; /*动画时间*/
+}

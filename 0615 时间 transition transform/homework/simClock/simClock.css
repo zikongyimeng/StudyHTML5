@@ -1,0 +1,49 @@
+#simClock{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(244, 240, 255);
+    border-radius: 250px;
+    margin: auto;
+    border: 5px solid #9b8b8b;
+}
+#simHour{
+    background-color: black;
+    width: 20px;
+    height:120px;
+    border-radius: 10px;
+    margin-left: 240px;
+    margin-top: 130px;
+    transform-origin:50% 95%;
+}
+#simMinute{
+    background-color: navy;
+    width: 10px;
+    height:150px;
+    border-radius: 5px;
+    margin-left: 245px;
+    margin-top: 100px;
+    position: relative;
+    left:0px;
+    top: -250px;
+    transform-origin:50% 95%;
+}
+#simSecond{
+    background-color: red;
+    width: 8px;
+    height: 180px;
+    border-radius: 4px;
+    margin-left: 246px;
+    margin-top: 70px;
+    position: relative;
+    left: 0px;
+    top: -500px;
+    transform-origin:50% 95%;
+}
+#showClock{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 150px;
+    top:-360px;
+    font-size: 50px;
+}

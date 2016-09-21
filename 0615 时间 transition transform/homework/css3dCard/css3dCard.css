@@ -1,0 +1,42 @@
+
+
+
+#img1 #img3{
+    position: absolute;
+
+}
+#img2 #img4{
+    position: absolute;
+
+}
+
+@keyframes imgTo0 {
+    from{
+        transform: perspective(1000px) rotateY(180deg);
+    }
+    to{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+@keyframes imgTo180 {
+    from{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateY(180deg);
+    }
+}
+div{
+    animation: imgTo0;
+    animation-duration: 2s;
+    transform-style: preserve-3d;
+    float: left;
+}
+div:hover{
+    animation: imgTo180;
+    animation-duration: 2s;
+    transform-style: preserve-3d;
+    animation-fill-mode: forwards;
+}
+
